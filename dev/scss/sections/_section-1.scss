@@ -17,13 +17,26 @@
 }
 
 h2{
-    font-size: remcalc (40);
+    font-size: rem-calc(40);
     color: $dark-teal
     text-align: center;
 }
 
 h3{
-    font-size: remcalc (30);
+    font-size: rem-calc(30);
     color: $turquesa
     text-align: center;
 }
+
+
+// @include md{
+//     height: 60vh;
+//     }
+    
+//     @include lg{
+//     height: 70vh;
+//     }
+    
+//     @include xl{
+//     height: 50vh;
+//     }
