@@ -19,3 +19,24 @@
     grid-template-columns: 10px auto 10px;
     grid-template-areas: ".section-2-text .";
 }
+
+#section-2-text{
+    
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        margin: 50px 50px;
+        padding: 10px;
+      }
+      
+      #overlay {
+        display: none;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-color: gray;
+        top: 50px;
+        left: 50px;
+        padding: 10px;
+        opacity: .8;
+      }
