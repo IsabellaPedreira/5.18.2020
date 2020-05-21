@@ -327,9 +327,6 @@ a {
   transition: 0.25s;
   display: inline-block; }
 
-body {
-  background-color: red; }
-
 /* =============
     Typography
 ============= */
@@ -535,7 +532,6 @@ footer {
       grid-template-columns: 50% auto; } }
   @media (min-width: 1200px) {
     #section-2 > div {
-      border: 1px solid red;
       grid-area: section-2; } }
   #section-2 > div section {
     display: grid;
@@ -676,8 +672,7 @@ footer {
         background-color: #EEEEEE; }
         #section-5 > div #gallery ul li div {
           background-size: cover;
-          height: 200px;
-          border: 1px solid red; }
+          height: 200px; }
         #section-5 > div #gallery ul li section {
           padding: 20px; }
           @media (min-width: 992px) {
