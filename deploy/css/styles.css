@@ -513,3 +513,209 @@ footer {
     #section-1 > div a:hover h3,
     #section-1 > div a:active h3 {
       color: #338595; }
+
+/* =============
+    Section 2
+============= */
+#section-2 {
+  background-color: #EEEEEE; }
+  @media (min-width: 1200px) {
+    #section-2 {
+      display: grid;
+      grid-template-areas: ". section-2 .";
+      grid-template-columns: auto 1200px auto; } }
+  @media (min-width: 768px) {
+    #section-2 > div {
+      display: grid;
+      grid-template-areas: "section-2-left section-2-right";
+      grid-template-columns: 70% auto; } }
+  @media (min-width: 992px) {
+    #section-2 > div {
+      grid-template-areas: "section-2-right section-2-left";
+      grid-template-columns: 50% auto; } }
+  @media (min-width: 1200px) {
+    #section-2 > div {
+      border: 1px solid red;
+      grid-area: section-2; } }
+  #section-2 > div section {
+    display: grid;
+    grid-template-areas: ". section-2-content .";
+    grid-template-columns: 15px auto 15px;
+    padding: 44px 0 96px; }
+    @media (min-width: 768px) {
+      #section-2 > div section {
+        grid-area: section-2-left;
+        grid-template-columns: auto 80% auto;
+        padding: 20px 0; } }
+    @media (min-width: 992px) {
+      #section-2 > div section {
+        grid-template-columns: auto 70% auto;
+        padding: 130px 0 145px; } }
+    #section-2 > div section > div {
+      grid-area: section-2-content; }
+      #section-2 > div section > div h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.1875rem;
+        margin-bottom: 10px;
+        text-align: center; }
+        @media (min-width: 768px) {
+          #section-2 > div section > div h1 {
+            text-align: left; } }
+        @media (min-width: 992px) {
+          #section-2 > div section > div h1 {
+            font-size: 2.8125rem; } }
+      #section-2 > div section > div p {
+        line-height: 1.3125rem;
+        text-align: justify; }
+        @media (min-width: 768px) {
+          #section-2 > div section > div p {
+            font-size: 1.0625rem;
+            line-height: 1.4375rem; } }
+        @media (min-width: 992px) {
+          #section-2 > div section > div p {
+            font-size: 1.25rem;
+            line-height: 1.8125rem; } }
+/* =============
+    Section 3
+============= */
+#section-3 {
+  display: grid;
+  grid-template-areas: ". section-3 .";
+  grid-template-columns: 15px auto 15px;
+  padding: 44px 0 32px; }
+  @media (min-width: 768px) {
+    #section-3 {
+      grid-template-columns: auto 80% auto;
+      padding: 32px 0 40px; } }
+  @media (min-width: 992px) {
+    #section-3 {
+      padding: 70px 0; } }
+  @media (min-width: 1200px) {
+    #section-3 {
+      grid-template-columns: auto 1200px auto;
+      padding: 100px 0 80px; } }
+  #section-3 aside {
+    background-image: url("../img/section-3/pants.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 320px; }
+    @media (min-width: 768px) {
+      #section-3 aside {
+        grid-area: section-2-right;
+        height: 100%; } }
+/* =============
+    Section 4
+============= */
+#section-4 {
+  display: grid;
+  grid-template-areas: ". section-4 .";
+  grid-template-columns: 15px auto 15px;
+  padding: 44px 0 32px; }
+  @media (min-width: 768px) {
+    #section-4 {
+      grid-template-columns: auto 80% auto;
+      padding: 32px 0 40px; } }
+  @media (min-width: 992px) {
+    #section-4 {
+      padding: 70px 0; } }
+  @media (min-width: 1200px) {
+    #section-4 {
+      grid-template-columns: auto 1200px auto;
+      padding: 100px 0 80px; } }
+  #section-4 > div {
+    grid-area: section-4; }
+    #section-4 > div #section-4-title {
+      margin-bottom: 10px; }
+      @media (min-width: 768px) {
+        #section-4 > div #section-4-title {
+          margin-bottom: 20px; } }
+      @media (min-width: 1200px) {
+        #section-4 > div #section-4-title {
+          margin-bottom: 35px; } }
+      #section-4 > div #section-4-title h1 {
+        font-size: 2.1875rem;
+        text-align: center; }
+        @media (min-width: 992px) {
+          #section-4 > div #section-4-title h1 {
+            font-size: 2.8125rem; } }
+/* =============
+    Section 5
+============= */
+#section-5 {
+  display: grid;
+  grid-template-areas: ". section-5 .";
+  grid-template-columns: 15px auto 15px;
+  padding: 44px 0 32px;
+  background-color: #EEEEEE; }
+  @media (min-width: 768px) {
+    #section-5 {
+      grid-template-columns: auto 80% auto;
+      padding: 32px 0 40px; } }
+  @media (min-width: 992px) {
+    #section-5 {
+      padding: 70px 0; } }
+  @media (min-width: 1200px) {
+    #section-5 {
+      grid-template-columns: auto 1200px auto;
+      padding: 100px 0 80px; } }
+  #section-5 > div {
+    grid-area: section-5; }
+    #section-5 > div #gallery ul {
+      display: grid;
+      gap: 21px; }
+      @media (min-width: 768px) {
+        #section-5 > div #gallery ul {
+          display: grid;
+          grid-template-areas: "Londoner Londoner Letterpress Letterpress" ". cards-stacked cards-stacked .";
+          grid-template-columns: repeat(4, 1fr); } }
+      @media (min-width: 992px) {
+        #section-5 > div #gallery ul {
+          grid-template-areas: "Londoner Letterpress cards-stacked";
+          grid-template-columns: repeat(3, 1fr); } }
+      #section-5 > div #gallery ul li {
+        background-color: #EEEEEE; }
+        #section-5 > div #gallery ul li div {
+          background-size: cover;
+          height: 200px;
+          border: 1px solid red; }
+        #section-5 > div #gallery ul li section {
+          padding: 20px; }
+          @media (min-width: 992px) {
+            #section-5 > div #gallery ul li section {
+              padding: 24px; } }
+          #section-5 > div #gallery ul li section h1 {
+            font-size: 1.5rem;
+            text-align: center; }
+            @media (min-width: 992px) {
+              #section-5 > div #gallery ul li section h1 {
+                ont-size: 1.75rem; } }
+          #section-5 > div #gallery ul li section p {
+            line-height: 1.1875rem;
+            margin: 20px 0;
+            text-align: justify; }
+            @media (min-width: 992px) {
+              #section-5 > div #gallery ul li section p {
+                font-size: 1.1875rem;
+                line-height: 1.4375rem; } }
+          #section-5 > div #gallery ul li section h4 {
+            font-size: 0.875rem; }
+            @media (min-width: 992px) {
+              #section-5 > div #gallery ul li section h4 {
+                font-size: 1rem; } }
+      #section-5 > div #gallery ul #londoner {
+        border: 1px solid red; }
+        @media (min-width: 768px) {
+          #section-5 > div #gallery ul #londoner {
+            grid-area: Londoner; } }
+        #section-5 > div #gallery ul #londoner div {
+          background-image: url("../img/section-5/Londoner.jpg"); }
+      @media (min-width: 768px) {
+        #section-5 > div #gallery ul #letterpress {
+          grid-area: Letterpress; } }
+      #section-5 > div #gallery ul #letterpress div {
+        background-image: url("../img/section-5/Letterpress.jpg"); }
+      @media (min-width: 768px) {
+        #section-5 > div #gallery ul #cards-stacked {
+          grid-area: cards-stacked; } }
+      #section-5 > div #gallery ul #cards-stacked div {
+        background-image: url("../img/section-5/cards-stacked.jpg"); }

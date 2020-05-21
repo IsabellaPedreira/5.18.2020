@@ -2,108 +2,128 @@
     Section 5
 ============= */
 #section-5 {
-	background-color: $light-grey;
-	@include xl {
-		display: grid;
-		grid-template-areas: ". section-5 .";
-		grid-template-columns: auto 1200px auto;
-    }
-    
-#section-5 {
-	display: grid;
-	grid-template-areas: ". section-5 .";
-	grid-template-columns: 15px auto 15px;
+    display: grid;
+    grid-template-areas: ". section-5 .";
+    grid-template-columns: 15px auto 15px;
     padding: 44px 0 32px;
-    
-	@include md {
+    background-color: $light-grey;
+
+    @include md {
         grid-template-columns: auto 80% auto;
         padding: 32px 0 40px;
     }
-    @include lg{
+
+    @include lg {
         padding: 70px 0;
     }
-	@include xl {
+
+    @include xl {
         grid-template-columns: auto 1200px auto;
         padding: 100px 0 80px;
-	}
-	
-#gallery {
-			
-    ul {
-        display: grid;
-        gap: 21px;
-        @include md {
-            display: grid;
-            grid-template-areas: 
-            "Londoner Londoner Letterpress Letterpress"
-                ". cards-stacked cards-stacked .";
-            grid-template-columns: repeat(4, 1fr);
-        }
-        @include lg {
-            grid-template-areas: "Londoner Letterpress cards-stacked";
-            grid-template-columns: repeat(3, 1fr);
-        }
-        li {
-            background-color: $light-grey;
-            div {
-                background-size: cover;
-                height: 200px;
-            }
-            section {
-                padding: 20px;
-                @include lg {
-                    padding: 24px;
-                }
-                h1 {
-                    font-size: rem-calc(24);
-                    text-align: center;
-                    @include lg {
-                        ont-size: rem-calc(28);
-                    }
-                }
-                p {
-                    line-height: rem-calc(19);
-                    margin: 20px 0;
-                    text-align: justify;
-                    @include lg {
-                        font-size: rem-calc(19);
-                        line-height: rem-calc(23);
-                    }
-                }
-                h4 {
-                    font-size: rem-calc(14);
-                    @include lg {
-                        font-size: rem-calc(16);
-                    }
-                }
-            } 
-            
-            #Londoner {
+    }
+
+    >div{
+        grid-area: section-5;
+        #gallery {
+
+            ul {
+                display: grid;
+                gap: 21px;
+    
                 @include md {
-                    grid-area: Londoner;
+                    display: grid;
+                    grid-template-areas:
+                        "Londoner Londoner Letterpress Letterpress"
+                        ". cards-stacked cards-stacked .";
+                    grid-template-columns: repeat(4, 1fr);
                 }
-                div {
-                    background-image: url("../img/section-5/Londoner.jpg");
+    
+                @include lg {
+                    grid-template-areas: "Londoner Letterpress cards-stacked";
+                    grid-template-columns: repeat(3, 1fr);
                 }
-            }
-            
-        }
-       
-        #Letterpress {
-            @include md {
-                grid-area: Letterpress;
-            }
-            div {
-                background-image: url("../img/section-5/Letterpress.jpg");
-            }
-        }
-        #cards-stacked {
-            @include md {
-                grid-area: cards-stacked;
-            }
-            div {
-                background-image: url("../img/section-5/cards-stacked.jpg");
+    
+    
+                li {
+                    background-color: $light-grey;
+    
+                    div {
+                        background-size: cover;
+                        height: 200px;
+                        border: 1px solid red;
+                    }
+    
+                    section {
+                        padding: 20px;
+    
+                        @include lg {
+                            padding: 24px;
+                        }
+    
+                        h1 {
+                            font-size: rem-calc(24);
+                            text-align: center;
+    
+                            @include lg {
+                                ont-size: rem-calc(28);
+                            }
+                        }
+    
+                        p {
+                            line-height: rem-calc(19);
+                            margin: 20px 0;
+                            text-align: justify;
+    
+                            @include lg {
+                                font-size: rem-calc(19);
+                                line-height: rem-calc(23);
+                            }
+                        }
+    
+                        h4 {
+                            font-size: rem-calc(14);
+    
+                            @include lg {
+                                font-size: rem-calc(16);
+                            }
+                        }
+                    }
+                }
+    
+                #londoner {
+                    border: 1px solid red;
+    
+                    @include md {
+                        grid-area: Londoner;
+                    }
+    
+                    div {
+                        background-image: url("../img/section-5/Londoner.jpg");
+                    }
+                }
+    
+                #letterpress {
+                    @include md {
+                        grid-area: Letterpress;
+                    }
+    
+                    div {
+                        background-image: url("../img/section-5/Letterpress.jpg");
+                    }
+                }
+    
+                #cards-stacked {
+                    @include md {
+                        grid-area: cards-stacked;
+                    }
+    
+                    div {
+                        background-image: url("../img/section-5/cards-stacked.jpg");
+                    }
+                }
             }
         }
     }
+
+    
 }
