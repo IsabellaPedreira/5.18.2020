@@ -76,16 +76,19 @@
                         font-size: rem-calc(16);
                     }
                 }
+            } 
+            
+            #Londoner {
+                @include md {
+                    grid-area: Londoner;
+                }
+                div {
+                    background-image: url("../img/section-5/Londoner.jpg");
+                }
             }
+            
         }
-        #Londoner {
-            @include md {
-                grid-area: Londoner;
-            }
-            div {
-                background-image: url("../img/section-5/Londoner.jpg");
-            }
-        }
+       
         #Letterpress {
             @include md {
                 grid-area: Letterpress;
