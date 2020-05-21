@@ -2,6 +2,14 @@
     Section 5
 ============= */
 #section-5 {
+	background-color: $light-grey;
+	@include xl {
+		display: grid;
+		grid-template-areas: ". section-5 .";
+		grid-template-columns: auto 1200px auto;
+    }
+    
+#section-5 {
 	display: grid;
 	grid-template-areas: ". section-5 .";
 	grid-template-columns: 15px auto 15px;
