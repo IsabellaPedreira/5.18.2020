@@ -50,8 +50,8 @@
                     div {
                         background-size: cover;
                         height: 200px;
-                        border: 1px solid red;
-                    }
+                    //     border: 1px solid red;
+                    // }
     
                     section {
                         padding: 20px;
@@ -91,7 +91,7 @@
                 }
     
                 #londoner {
-                    border: 1px solid red;
+                    // border: 1px solid red;
     
                     @include md {
                         grid-area: Londoner;

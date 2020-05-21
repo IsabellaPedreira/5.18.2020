@@ -19,7 +19,7 @@
 			grid-template-columns: 50% auto;
 		}
 		@include xl {
-			border: 1px solid red;
+			// border: 1px solid red;
 			grid-area: section-2;
 		}
 		section {
