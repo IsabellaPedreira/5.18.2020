@@ -63,15 +63,3 @@
 				}
 			}
 		}
-		aside {
-			background-image: url('../img/section-2/hero.jpg');
-			background-position: center;
-			background-size: cover;
-			height: 320px;
-			@include md {
-				grid-area: section-2-right;
-				height: 100%;
-			}
-		}
-	}
-}
