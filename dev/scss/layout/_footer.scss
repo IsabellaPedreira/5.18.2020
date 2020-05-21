@@ -2,16 +2,64 @@
     Footer
 ============= */
 
-footer{
-    background-color: #080808;
-    display: grid;
-    grid-template-columns: 4% auto 4%;
-    grid-template-areas: ". footer .";
-    
-    @include md{
-    grid-template-columns: 20% auto 20%;
+footer {
+    background-color: $black;
+    padding: 43px 0 46px;
+
+    @include xl {
+        display: grid;
+        grid-template-areas: ". footer. ";
+        grid-template-columns: auto 1200px auto;
     }
-    
-    #footer-content{
-    grid-area: footer;
+
+    >div {
+        @include xl {
+            grid-area: footer;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+
+            @include lg {
+                justify-content: flex-start;
+            }
+
+            li {
+                margin: 0 10px;
+
+                a:link,
+                a:visited {
+                    color: $grey;
+                    font-size: rem-calc(25);
+                    text-decoration: none;
+                    transition: 0.25s;
+                }
+
+                a:hover,
+                a:active {
+                    color: $red;
+                }
+            }
+        }
+
+        aside {
+            margin-top: 20px;
+            text-align: center;
+
+            @include lg {
+                margin-top: 0px;
+                text-align: right;
+            }
+
+            h5 {
+                color: $white;
+                font-size: rem-calc(11);
+
+                span {
+                    color: $red;
+                }
+            }
+        }
     }
+}
