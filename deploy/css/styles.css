@@ -327,6 +327,9 @@ a {
   transition: 0.25s;
   display: inline-block; }
 
+body {
+  background-color: red; }
+
 /* =============
     Typography
 ============= */
