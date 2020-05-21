@@ -1,23 +1,77 @@
 /* =============
     Section 2
 ============= */
-
-#section-2{
-    display: grid;
-    grid-template-columns: 15px auto 15px;
-    grid-template-areas: ". section-2 .";
-    background-color: $light-grey;
+#section-2 {
+	background-color: $light-grey;
+	@include xl {
+		display: grid;
+		grid-template-areas: ". section-2 .";
+		grid-template-columns: auto 1200px auto;
+	}
+	>div {
+		@include md {
+			display: grid;
+			grid-template-areas: "section-2-left section-2-right";
+			grid-template-columns: 70% auto;
+		}
+		@include lg {
+			grid-template-areas: "section-2-right section-2-left";
+			grid-template-columns: 50% auto;
+		}
+		@include xl {
+			grid-area: section-2;
+		}
+		section {
+			display: grid;
+			grid-template-areas: ". section-2-content .";
+			grid-template-columns: 15px auto 15px;
+			padding: 44px 0 96px;
+			@include md {
+				grid-area: section-2-left;
+				grid-template-columns: auto 80% auto;
+				padding: 20px 0;
+			}
+			@include lg {
+				grid-template-columns: auto 70% auto;
+				padding: 130px 0 145px;
+			}
+			>div {
+				grid-area: section-2-content;
+				h1 {
+					font-family: 'Montserrat', sans-serif;
+					font-size: rem-calc(35);
+					margin-bottom: 10px;
+					text-align: center;
+					@include md {
+						text-align: left;
+					}
+					@include lg {
+						font-size: rem-calc(45);
+					}
+				}
+				p {
+					line-height: rem-calc(21);
+					text-align: justify;
+					@include md {
+						font-size: rem-calc(17);
+						line-height: rem-calc(23);
+					}
+					@include lg {
+						font-size: rem-calc(20);
+						line-height: rem-calc(29);
+					}
+				}
+			}
+		}
+		aside {
+			background-image: url('../img/section-2/hero.jpg');
+			background-position: center;
+			background-size: cover;
+			height: 320px;
+			@include md {
+				grid-area: section-2-right;
+				height: 100%;
+			}
+		}
+	}
 }
-
-#section-2-content{
-    display: grid;
-    grid-template-columns: 10px auto 10px;
-    grid-template-areas: ".section-2-content .";
-}
-
-#section-2-text{
-    display: grid;
-    grid-template-columns: 10px auto 10px;
-    grid-template-areas: ".section-2-text .";
-}
-
