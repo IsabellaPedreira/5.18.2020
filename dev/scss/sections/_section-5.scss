@@ -2,20 +2,80 @@
     Section 5
 ============= */
 
-#section-5{
-display: grid;
-grid-template-columns: 15px auto 15px;
-grid-template-areas: ". section-5 .";
+#gallery {
+			
+    ul {
+        display: grid;
+        gap: 21px;
+        @include md {
+            display: grid;
+            grid-template-areas: 
+            "Londoner Londoner Letterpress Letterpress"
+                ". cards-stacked cards-stacked .";
+            grid-template-columns: repeat(4, 1fr);
+        }
+        @include lg {
+            grid-template-areas: "Londoner Letterpress cards-stacked";
+            grid-template-columns: repeat(3, 1fr);
+        }
+        li {
+            background-color: $light-grey;
+            div {
+                background-size: cover;
+                height: 200px;
+            }
+            section {
+                padding: 20px;
+                @include lg {
+                    padding: 24px;
+                }
+                h1 {
+                    font-size: rem-calc(24);
+                    text-align: center;
+                    @include lg {
+                        ont-size: rem-calc(28);
+                    }
+                }
+                p {
+                    line-height: rem-calc(19);
+                    margin: 20px 0;
+                    text-align: justify;
+                    @include lg {
+                        font-size: rem-calc(19);
+                        line-height: rem-calc(23);
+                    }
+                }
+                h4 {
+                    font-size: rem-calc(14);
+                    @include lg {
+                        font-size: rem-calc(16);
+                    }
+                }
+            }
+        }
+        #gallery-1 {
+            @include md {
+                grid-area: gallery-1;
+            }
+            div {
+                background-image: url("../img/section-3/Londoner.jpg");
+            }
+        }
+        #gallery-2 {
+            @include md {
+                grid-area: gallery-2;
+            }
+            div {
+                background-image: url("../img/section-3/Letterpress.jpg");
+            }
+        }
+        #gallery-3 {
+            @include md {
+                grid-area: gallery-3;
+            }
+            div {
+                background-image: url("../img/section-3/cards-stacked.jpg");
+            }
+        }
+    }
 }
-    
-    #section-5-content{
-    background-image: url("../img/section-5/Londoner.jpg");
-    background-position: center top;
-    }
-
-    #section-5-text{
-
-    display: grid;
-    grid-template-columns: 10px auto 10px;
-    grid-template-areas: ".section-5-text .";
-    }
