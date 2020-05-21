@@ -17,4 +17,13 @@
 	@include xl {
         grid-template-columns: auto 1200px auto;
         padding: 100px 0 80px;
-	}
+    }
+    
+    #gallery-1 {
+        @include md {
+            grid-area: pants;
+        }
+        div {
+            background-image: url("../img/section-3/pants.jpg");
+        }
+    }
