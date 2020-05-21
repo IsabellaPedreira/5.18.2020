@@ -78,7 +78,7 @@
                 }
             }
         }
-        #gallery-1 {
+        #Londoner {
             @include md {
                 grid-area: Londoner;
             }
@@ -86,7 +86,7 @@
                 background-image: url("../img/section-5/Londoner.jpg");
             }
         }
-        #gallery-2 {
+        #Letterpress {
             @include md {
                 grid-area: Letterpress;
             }
@@ -94,7 +94,7 @@
                 background-image: url("../img/section-5/Letterpress.jpg");
             }
         }
-        #gallery-3 {
+        #cards-stacked {
             @include md {
                 grid-area: cards-stacked;
             }
