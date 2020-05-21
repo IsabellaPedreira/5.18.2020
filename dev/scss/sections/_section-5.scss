@@ -55,7 +55,7 @@
         }
         #gallery-1 {
             @include md {
-                grid-area: gallery-1;
+                grid-area: Londoner;
             }
             div {
                 background-image: url("../img/section-5/Londoner.jpg");
@@ -63,7 +63,7 @@
         }
         #gallery-2 {
             @include md {
-                grid-area: gallery-2;
+                grid-area: Letterpress;
             }
             div {
                 background-image: url("../img/section-5/Letterpress.jpg");
@@ -71,7 +71,7 @@
         }
         #gallery-3 {
             @include md {
-                grid-area: gallery-3;
+                grid-area: cards-stacked;
             }
             div {
                 background-image: url("../img/section-5/cards-stacked.jpg");
