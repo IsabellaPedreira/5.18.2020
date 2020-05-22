@@ -327,9 +327,6 @@ a {
   transition: 0.25s;
   display: inline-block; }
 
-body {
-  background-color: red; }
-
 /* =============
     Typography
 ============= */
@@ -535,7 +532,6 @@ footer {
       grid-template-columns: 50% auto; } }
   @media (min-width: 1200px) {
     #section-2 > div {
-      border: 1px solid red;
       grid-area: section-2; } }
   #section-2 > div section {
     display: grid;
@@ -676,8 +672,7 @@ footer {
         background-color: #EEEEEE; }
         #section-5 > div #gallery ul li div {
           background-size: cover;
-          height: 200px;
-          border: 1px solid red; }
+          height: 200px; }
         #section-5 > div #gallery ul li section {
           padding: 20px; }
           @media (min-width: 992px) {
@@ -702,13 +697,11 @@ footer {
             @media (min-width: 992px) {
               #section-5 > div #gallery ul li section h4 {
                 font-size: 1rem; } }
-      #section-5 > div #gallery ul #londoner {
-        border: 1px solid red; }
-        @media (min-width: 768px) {
-          #section-5 > div #gallery ul #londoner {
-            grid-area: Londoner; } }
-        #section-5 > div #gallery ul #londoner div {
-          background-image: url("../img/section-5/Londoner.jpg"); }
+      @media (min-width: 768px) {
+        #section-5 > div #gallery ul #londoner {
+          grid-area: Londoner; } }
+      #section-5 > div #gallery ul #londoner div {
+        background-image: url("../img/section-5/Londoner.jpg"); }
       @media (min-width: 768px) {
         #section-5 > div #gallery ul #letterpress {
           grid-area: Letterpress; } }
